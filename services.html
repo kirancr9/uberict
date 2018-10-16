@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Services | UberEats</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png">
+          UberEats <span class="navbar-kerala">Kerala</span> 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h1 class="masthead-heading mb-0">Services</h1>
+        </div>
+      </div>
+    </header>
+
+    <section id="sec-services">
+      <div class="container">
+        <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <center>
+                        <h2 class="display-4">Registration</h2>
+                    </center>
+                </div>
+          <div class="col-lg-4 order-lg-1">
+          </div>
+          <div class="col-lg-8 order-lg-2">
+            <div class="p-5">
+                <form action="" method="POST" onsubmit="return IsFormValid()">
+                    <div id="msg-error">
+                        <div class="alert with-close alert-danger">
+                            <span class="badge badge-pill badge-danger">Error!!</span>
+                            <span id="error-text"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-name">Full Name</label>
+                        <input type="text" class="form-control" id="form-name" placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email">Email address</label>
+                        <input type="text" class="form-control" id="form-email" placeholder="Enter Email Id">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-mob">Mob No.</label>
+                        <input type="text" class="form-control" id="form-mob" placeholder="Enter 10 digit Mob No.">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-address">Address</label>
+                        <textarea class="form-control" id="form-address" rows="3" placeholder="Enter Your Address Here"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-services rounded-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="container">
+
+      <h2 class="my-4">Meet The UberEats Riders</h2>
+
+      <!-- Marketing Icons Section -->
+      <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+              <h4 class="card-header"><b>Nihad Nizar</b></h4>
+              <div class="card-body">
+                <img src="img/nihad.jpg">
+                <p class="card-text"><b>-"I deliver so that I can , <br>start my own business."</b>
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+              <div class="card h-100">
+                  <h4 class="card-header"><b>Shanib Ibrahim</b></h4>
+                <div class="card-body">
+                    <img src="img/shanib.jpg">
+                    <p class="card-text"><b>-“I deliver so that I can  , <br> support my mom and pay for school.”</b>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+          </div>
+   
+          <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                      <h4 class="card-header"><b>Amal Ihsan</b></h4>
+                      <div class="card-body">
+                        <img src="img/kuttn.jpg">
+                        <p class="card-text"><b>-“I deliver so that I can ,<br>exercise and get paid for it”</b>
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                      </div>
+                </div>
+          </div>
+        </div>
+
+
+    <div class="container">
+    <footer class="py-5 bg-black">
+      <div class="container">
+        <p class="m-0 text-center text-white small">Copyright &copy; UberEatsKerala</p>
+      </div>
+    </footer>
+    <script>
+        document.getElementById("msg-error").style.display = "none";
+
+        function IsFormValid(){
+
+            document.getElementById("msg-error").style.display = "none";
+            var UserName=document.getElementById("form-name").value;
+            var UserMail=document.getElementById("form-email").value;
+            var UserMob=document.getElementById("form-mob").value;
+            var UserAdd=document.getElementById("form-address").value;
+            var RegEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g;
+            var RegMob = /^\d{10}$/;
+
+            if( UserName == "" ){
+                document.getElementById("msg-error").style.display = "block";
+                document.getElementById("error-text").innerHTML="Enter Full Name";
+                return false;
+            }else if(!RegEmail.test(UserMail)){
+                document.getElementById("msg-error").style.display = "block";
+                document.getElementById("error-text").innerHTML="Enter Valid Email";
+                return false;
+            }else if(!RegMob.test(UserMob)){
+                document.getElementById("msg-error").style.display = "block";
+                document.getElementById("error-text").innerHTML="Enter Valid 10 digit Mob No.";
+                return false;
+            }else if(UserAdd == ""){
+                document.getElementById("msg-error").style.display = "block";
+                document.getElementById("error-text").innerHTML="Enter Your Address";
+                return false;
+            }else{
+                return true;
+            } 
+
+
+        }
+    
+    </script>
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+
+</html>
