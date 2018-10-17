@@ -66,7 +66,7 @@ body {
     overflow: hidden;
     padding-top: calc(7rem + 72px);
     padding-bottom: 7rem;
-    background-image: url("../static/img/back.jpg");
+    background-image: url("../img/back.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -143,7 +143,7 @@ body {
     border-color: #143555 !important;
   }
   #sec-services{
-    background-image: url("../static/img/services.jpg");
+    background-image: url("../img/services.jpg");
     background-repeat: no-repeat;
   }
 
